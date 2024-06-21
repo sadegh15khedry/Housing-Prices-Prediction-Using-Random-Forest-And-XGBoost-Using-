@@ -1,8 +1,8 @@
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
-def load_data(file_path):
-    return pd.read_csv(file_path)
+def load_data(file_name):
+    return pd.read_csv('../datasets/'+file_name)
 
 def split_data(df, feature_column, label_column, test_size=.2, random_state=50):
     x = df.drop(columns= [feature_column])
