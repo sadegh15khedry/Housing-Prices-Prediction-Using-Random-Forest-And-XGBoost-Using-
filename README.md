@@ -9,6 +9,7 @@ This project utilizes a Random Forest Regressor model to predict housing prices 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dataset](#dataset)
+- [Folder Structure](#folder-structure)
 - [Data Exploration](#data-exploration)
 - [Data Preprocessing](#data-preprocessing)
 - [Model Training](#model-training)
@@ -43,6 +44,16 @@ Run the Jupyter notebooks for different aspects of the project:
 ## Dataset
 
 The Boston Housing dataset contains various factors that might influence housing prices in Boston suburbs. Features include crime rate, property tax rate, and accessibility to highways. The target variable is the median value of owner-occupied homes (MEDV).
+
+## Folder Structure
+
+The project follows a standard folder structure convention:
+
+- **datasets/**: Contains dataset files.
+- **models/**: Stores trained machine learning models.
+- **notebooks/**: Jupyter notebooks for data exploration, preprocessing, model training, and evaluation.
+- **src/**: Source code directory containing Python scripts for data processing, model training, evaluation, and utility functions.
+
 
 ## Data Exploration
 
