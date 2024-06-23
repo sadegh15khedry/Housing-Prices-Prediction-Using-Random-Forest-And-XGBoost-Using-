@@ -25,6 +25,6 @@ def save_model(model, path):
     joblib.dump(model, path)
     
 
-def load_model(model, path):
-    loaded_model = joblib.load('random_forest_model.joblib')
+def load_model(path):
+    loaded_model = joblib.load(path)
     return loaded_model
