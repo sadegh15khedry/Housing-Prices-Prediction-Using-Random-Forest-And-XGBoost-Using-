@@ -6,6 +6,7 @@ This project utilizes a Random Forest Regressor model to predict housing prices 
 
 ## Table of Contents
 
+- [Random Forest Regressor](#random-forest-regressor)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Dataset](#dataset)
@@ -17,6 +18,23 @@ This project utilizes a Random Forest Regressor model to predict housing prices 
 - [Utils](#utils)
 - [Contributing](#contributing)
 - [License](#license)
+
+## Random Forest Regressor
+
+The Random Forest Regressor is an ensemble learning method that operates by constructing multiple decision trees during training and outputting the mean prediction of the individual trees for regression tasks. Here’s a brief overview of its functioning:
+
+1. **Ensemble Method**: It combines multiple decision trees to improve generalizability and robustness over a single decision tree model.
+
+2. **Tree Construction**: Each tree is built using a subset of the training data and a random selection of features. This randomness helps to reduce overfitting.
+
+3. **Prediction**: For regression tasks, predictions are made by averaging the predictions of all the individual trees in the forest.
+
+4. **Hyperparameters**: Important hyperparameters include the number of trees (n_estimators), maximum depth of each tree (max_depth), and the number of features considered for splitting at each node (max_features).
+
+Random Forests are widely used due to their ability to handle large datasets with high dimensionality and noisy data, while also providing good accuracy and robustness.
+
+For more details on the implementation and parameters, refer to the `model_training.ipynb` notebook and the scikit-learn documentation on [RandomForestRegressor](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html).
+
 
 ## Installation
 
