@@ -48,7 +48,7 @@ pip install -r requirements.txt
 Clone the repository and navigate to the project directory:
 
 ```bash
-git clone <repository_url>
+git clone (https://github.com/sadegh15khedry/Housing-Prices-Prediction-Using-RandomForest.git)
 cd random-forest-boston-housing
 ```
 
