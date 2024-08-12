@@ -38,7 +38,7 @@ def set_pandas_options():
     pd.set_option('display.width', 1000)
     
     
-def get_Errors(y, y_pred):
+def get_Errors(y, y_pred, x):
     mse = mean_squared_error(y, y_pred)
     print(f"Mean Squared Error: {mse:.2f}")
     
@@ -53,6 +53,12 @@ def get_Errors(y, y_pred):
     # Calculating R-squared (Coefficient of Determination)
     r2 = r2_score(y, y_pred)
     print(f"R-squared: {r2:.2f}")
+    
+    # Calculating Adjusted R-squared
+    n = len(y)
+    p = x.shape[1]  # Number of predictors
+    adj_r2 = 1 - (1 - r2) * (n - 1) / (n - p - 1)
+    print(f"Adjusted R-squared: {adj_r2:.2f}")
     
 def load_data(path):
     csv_file = pd.read_csv(path)
