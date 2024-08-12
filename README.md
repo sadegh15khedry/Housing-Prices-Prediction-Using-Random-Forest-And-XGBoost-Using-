@@ -16,6 +16,7 @@ This project utilizes a Random Forest Regressor model to predict housing prices 
 - [Model Training](#model-training)
 - [Model Evaluation](#model-evaluation)
 - [Utils](#utils)
+- [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -190,6 +191,32 @@ save_model(model, "model.joblib")
 #Example: Load trained model
 loaded_model = load_model("model.joblib")
 ```
+
+## Results
+
+### Train
+
+- Mean Squared Error: 2.24
+- Mean Absolute Error (MAE): 0.89
+- Root Mean Squared Error (RMSE): 1.50
+- R-squared: 0.97
+- Adjusted R-squared: 0.97
+
+### Validation
+
+- Mean Squared Error: 15.66
+- Mean Absolute Error (MAE): 2.61
+- Root Mean Squared Error (RMSE): 3.96
+- R-squared: 0.74
+- Adjusted R-squared: 0.65
+
+### Test
+
+- Mean Squared Error: 12.65
+- Mean Absolute Error (MAE): 2.48
+- Root Mean Squared Error (RMSE): 3.56
+- R-squared: 0.84
+- Adjusted R-squared: 0.80
 
 ## Contributing
 
